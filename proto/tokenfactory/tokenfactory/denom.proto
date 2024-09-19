@@ -1,0 +1,16 @@
+syntax = "proto3";
+package tokenfactory.tokenfactory;
+
+option go_package = "tokenfactory/x/tokenfactory/types";
+
+message Denom {
+  string denom = 1; 
+  string description = 2; 
+  string ticker = 3; 
+  int32 precision = 4; 
+  string url = 5; 
+  int32 maxSupply = 6; 
+  bool canChangeMaxSupply = 7; 
+  string creator = 8;
+}
+
