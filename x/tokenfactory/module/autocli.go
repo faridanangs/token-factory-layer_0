@@ -47,9 +47,9 @@ func (am AppModule) AutoCLIOptions() *autocliv1.ModuleOptions {
 				},
 				{
 					RpcMethod:      "UpdateDenom",
-					Use:            "update-denom [denom] [description] [ticker] [precision] [url] [maxSupply] [canChangeMaxSupply]",
+					Use:            "update-denom [denom] [description] [url] [maxSupply] [canChangeMaxSupply]",
 					Short:          "Update Denom",
-					PositionalArgs: []*autocliv1.PositionalArgDescriptor{{ProtoField: "denom"}, {ProtoField: "description"}, {ProtoField: "ticker"}, {ProtoField: "precision"}, {ProtoField: "url"}, {ProtoField: "maxSupply"}, {ProtoField: "canChangeMaxSupply"}},
+					PositionalArgs: []*autocliv1.PositionalArgDescriptor{{ProtoField: "denom"}, {ProtoField: "description"}, {ProtoField: "url"}, {ProtoField: "maxSupply"}, {ProtoField: "canChangeMaxSupply"}},
 				},
 				{
 					RpcMethod:      "DeleteDenom",
